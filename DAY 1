@@ -1,0 +1,13 @@
+Problem Name: Find Peak Element (leet Code)
+
+int findPeakElement(int* nums, int numsSize) {
+    int max=nums[0];
+    int ind=0;
+    for (int i=1;i<numsSize;i++){
+    if (nums[i]>max){
+        max=nums[i];
+        ind=i;
+    }
+    }
+    return ind;
+}
